@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pymongo
+python-dotenv
+certifi
+pydantic[email]
+python-jose[cryptography]
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+google-genai
