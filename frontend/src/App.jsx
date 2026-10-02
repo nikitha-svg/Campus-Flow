@@ -809,7 +809,7 @@ function Dashboard({ logout, backendStatus, user }) {
 }
 
 function App() {
-  const API = "http://127.0.0.1:8000";
+  const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
   const [mode, setMode] = useState("login");
   const [form, setForm] = useState({name:"", usn:"", email:"", password:"", confirm_password:"", login:""});
   const [loggedIn, setLoggedIn] = useState(!!localStorage.getItem("campusflow_token"));
